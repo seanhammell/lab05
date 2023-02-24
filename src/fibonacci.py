@@ -2,7 +2,7 @@
 Author: Sean Hammell
 Filename: fibonacci.py
 Date: 02/24/2023
-Purpose: Recursively compute the number of people with the flu on a given day.
+Purpose: Find the ith fibonacci value or verify a number is in the sequence.
 """
 def ith_fibonacci(i):
     """
@@ -46,7 +46,7 @@ def main():
         elif mode == "-v":
             verify_fibonacci(value)
     except:
-        print("Valid modes: -i and -v\nValid values: positive integers")
+        print("Valid modes: -i and -v\nValid values: non-negative integers")
 
 if __name__ == "__main__":
 	main()

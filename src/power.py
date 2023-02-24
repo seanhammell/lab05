@@ -21,9 +21,9 @@ def main():
 		try:
 			base = int(input("Enter a base: "))
 			exp = int(input("Enter a power: "))
-			if exp < 0:
+			while exp < 0:
 				print("Sorry, your exponent must be zero or larger")
-				continue
+				exp = int(input("Enter a power: "))
 			print(f"Answer: {power(base, exp)}")
 			break
 		except ValueError:

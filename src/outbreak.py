@@ -18,9 +18,9 @@ def outbreak(day):
     return outbreak(day - 1) + outbreak(day - 2) + outbreak(day - 3)
 
 def main():
-	"""
-	Launching point of the program.
-	"""
+    """
+    Launching point of the program.
+    """
     print("OUTBREAK!")
     day = int(input("What day do you want a sick count for?: "))
     if (day < 1):
